@@ -1,7 +1,16 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import App from './components/app/app.jsx';
+import {App} from './components/app/app.jsx';
 
-const errorsNumber = 1337;
+const init = () => {
+  const settings = {
+    errorCount: 1337,
+  };
 
-ReactDOM.render(<App errorsNumber={errorsNumber} />, document.getElementById(`root`));
+  ReactDOM.render(
+      <App errorCount={settings.errorCount} />,
+      document.querySelector(`#root`)
+  );
+};
+
+init();

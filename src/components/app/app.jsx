@@ -1,11 +1,9 @@
 import React from 'react';
-import WelcomeScreen from '../welcomeScreen/welcomeScreen.jsx';
+import {WelcomeScreen} from '../welcomeScreen/welcomeScreen.jsx';
 
-export default class App extends React.Component {
-  render() {
-    // eslint-disable-next-line react/prop-types
-    const {errorsNumber} = this.props;
+export const App = (props) => {
+  // eslint-disable-next-line react/prop-types
+  const {errorCount} = props;
 
-    return <WelcomeScreen errorsNumber={errorsNumber} />;
-  }
-}
+  return <WelcomeScreen errorCount={errorCount} />;
+};
