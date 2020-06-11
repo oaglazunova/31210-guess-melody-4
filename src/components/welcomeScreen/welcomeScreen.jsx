@@ -4,7 +4,8 @@ export const WelcomeScreen = (props) => {
   // eslint-disable-next-line react/prop-types
   const {errorCount} = props;
 
-  return <section className="welcome">
+  return (
+  <section className="welcome">
     <div className="welcome__logo">
       <img src="img/melody-logo.png" alt="Угадай мелодию" width="186" height="83"/>
     </div>
@@ -16,5 +17,5 @@ export const WelcomeScreen = (props) => {
       <li>Можно допустить {errorCount} ошибки.</li>
     </ul>
     <p className="welcome__text">Удачи!</p>
-  </section>;
+  </section>);
 };
