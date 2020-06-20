@@ -1,6 +1,5 @@
 import React from 'react';
 import {shallow} from 'enzyme';
-import {it, expect, describe, jest} from '@jest/globals';
 import {WelcomeScreen} from './welcome-screen.jsx';
 
 const testData = {
@@ -24,5 +23,15 @@ describe(`Welcome Screen component`, () => {
     welcomeButton.props().onClick();
 
     expect(onWelcomeButtonClick.mock.calls.length).toBe(1);
+  });
+  // Step 2: Unit test - errorCount number has a correct type
+  it(`check the type of errorCount`, () => {
+    const wrapper = shallow(<WelcomeScreen errorCount={testData.errorCount} onWelcomeButtonClick={()=>{}} />);
+    expect(typeof wrapper.prop(`errorCount`) === `number`);
+  });
+  // Step 3: Unit test - check if the logo img scr is correct
+  it(`logo source is correct`, () => {
+    const wrapper = shallow(<WelcomeScreen errorCount={testData.errorCount} onWelcomeButtonClick={()=>{}} />);
+    expect(wrapper.find(`img`).naturalWidth).not.toEqual(0);
   });
 });
