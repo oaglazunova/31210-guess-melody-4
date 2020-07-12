@@ -3,25 +3,25 @@ const AVATAR_URL = `https://api.adorable.io/avatars/128`;
 export default [
   {
     type: `genre`,
-    genre: `rock`,
+    genre: `baroque`,
     answers: [{
       src: `https://upload.wikimedia.org/wikipedia/commons/4/4e/BWV_543-fugue.ogg`,
-      genre: `rock`,
+      genre: `baroque`,
     }, {
-      src: `https://upload.wikimedia.org/wikipedia/commons/4/4e/BWV_543-fugue.ogg`,
+      src: `http://www.long-feng.ru/wp-content/uploads/2016/01/17.Fenghuangtaishangyichuixiao_Laoshi.mp3?_=6`,
       genre: `blues`,
     }, {
-      src: `https://upload.wikimedia.org/wikipedia/commons/4/4e/BWV_543-fugue.ogg`,
+      src: `http://www.long-feng.ru/wp-content/uploads/2016/01/44.Pingshaluoyan_ZZQ_duet.mp3?_=25`,
       genre: `jazz`,
     }, {
-      src: `https://upload.wikimedia.org/wikipedia/commons/4/4e/BWV_543-fugue.ogg`,
+      src: `http://www.long-feng.ru/wp-content/uploads/2016/01/72.Yizhen_Laoshi.mp3?_=39`,
       genre: `rock`,
     }],
   },
   {
     type: `artist`,
     song: {
-      artist: `Jim Beam`,
+      artist: `Johann Sebastian Bach`,
       src: `https://upload.wikimedia.org/wikipedia/commons/4/4e/BWV_543-fugue.ogg`,
     },
     answers: [{
@@ -32,7 +32,7 @@ export default [
       artist: `Jack Daniels`,
     }, {
       picture: `${AVATAR_URL}/${Math.random()}`,
-      artist: `Jim Beam`,
+      artist: `Johann Sebastian Bach`,
     }],
   }
 ];
